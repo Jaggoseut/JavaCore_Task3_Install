@@ -13,7 +13,7 @@ public class Main {
             if (name.mkdir())
                 sb.append(" Directory " + name.getName() + " - create. ");
             else
-                System.out.println("not create");
+                System.out.println(" Directory " + name.getName() + " not create");
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
         }
@@ -24,7 +24,7 @@ public class Main {
             if (q.createNewFile())
                 sb.append(" File " + q.getName() + " - create. ");
             else
-                System.out.println("not create");
+                System.out.println(" File " + q.getName() + " not create");
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
